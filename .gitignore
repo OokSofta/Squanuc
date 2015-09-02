@@ -1,7 +1,20 @@
+#IntelliJ IDEA
+.idea
+*.iml
+classes
+build
+.gradle
 
-/local.properties
-/.idea/workspace.xml
-/.idea/libraries
+
 .DS_Store
-/build
 /captures
+
+#Command line
+local.properties
+build.xml
+proguard-project.txt
+lint.xml
+
+#deploy
+deploy
+
