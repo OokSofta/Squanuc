@@ -38,11 +38,23 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"/>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        />
 
-    <Button
-        android:id="@+id/bLogout"
+    <EditText
+        android:id="@+id/etPassword"
+        android:inputType="textPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="LOGOUT"/>
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/bRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="REGISTER"/>
 
 </LinearLayout>

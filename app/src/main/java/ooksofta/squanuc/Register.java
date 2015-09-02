@@ -8,23 +8,24 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class Register extends AppCompatActivity implements View.OnClickListener {
 
-    Button bLogout;
-    EditText etName, etEmail, etUsername;
+    Button bRegister;
+    EditText etName, etEmail, etUsername, etPassword;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_register);
 
         etName = (EditText) findViewById(R.id.etName);
         etEmail = (EditText) findViewById(R.id.etEmail);
         etUsername = (EditText) findViewById(R.id.etUsername);
+        etPassword = (EditText) findViewById(R.id.etPassword);
 
-        bLogout = (Button) findViewById(R.id.bLogout);
+        bRegister = (Button) findViewById(R.id.bRegister);
 
-        bLogout.setOnClickListener(this);
+        bRegister.setOnClickListener(this);
     }
 
 
@@ -32,7 +33,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         switch (v.getId())
         {
-            case R.id.bLogout:
+            case R.id.bRegister:
                 break;
         }
     }
