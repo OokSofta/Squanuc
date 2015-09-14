@@ -1,5 +1,7 @@
 package ooksofta.squanuc;
 
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -35,5 +37,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.bLogout:
                 break;
         }
+        Utils.putBoolean(this, "isLoggedIn", true);
+        Intent intent = new Intent(this, InitActivity.class);
+        startActivity(intent);
     }
 }
